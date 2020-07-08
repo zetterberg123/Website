@@ -1,3 +1,3 @@
-# Temporary work in progress Website
+# Temporary work in progress website
 Next step:
 Add css styling
