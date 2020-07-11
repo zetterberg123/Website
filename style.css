@@ -1,0 +1,14 @@
+
+.body{
+  background-color: lightgray;
+}
+.logo-text{
+  color: indigo;
+  display: inline;
+  padding-left: 10px;
+}
+
+.wip-text{
+  color: darkred;
+}
+
