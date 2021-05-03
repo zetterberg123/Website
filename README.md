@@ -35,7 +35,6 @@ https://www.zetterberg123.com/
 ![img](images/progress/Second-website.PNG)
 - Final iteration
     - Desktop layout
-
 ![img](images/progress/Final-website.PNG)
     - Mobile layout
 
