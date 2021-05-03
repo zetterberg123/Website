@@ -30,11 +30,14 @@ https://www.zetterberg123.com/
 
 ### Progress images
 - First iteration
-![img](images\progress\First-website.PNG)
+![img](images/progress/First-website.PNG)
 - Second iteration
-![img](images\progress\Second-website.PNG)
+![img](images/progress/Second-website.PNG)
 - Final iteration
-    - Desktop layout
-![img](images\progress\Final-website.PNG)
-    - Mobile layout
-![img](images\progress\Final-mobile.PNG)
+
+    Desktop layout
+
+    ![img](images/progress/Final-website.PNG)
+    Mobile layout
+
+    ![img](images/progress/Final-mobile.PNG)
