@@ -2,36 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="zetterberg123's website">
+  <meta name="description" content="zetterberg123's portfolio website">
   <meta name="author" content="zetterberg123">
-  <meta name="keywords" content="zetterberg123">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--google font link-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <title>zetterberg123</title>
-
-  <!-- icon -->
-  <link rel="shortcut icon" type="image/x-icon" href="logo.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="images\logo.png"/>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body">
-  <header> <!-- Heading -->
-    <img class="logo-img" src="logo.jpg" alt="logo.jpg image not found"/>
-    <h1 class="logo-text">zetterberg123</h1>
+<body class="flex-column">
+  <header class="flex-row" id="scale">
+    <img onclick="spawn()" class="logo-img flex-row center" src="images\logo.jpg" alt="logo.jpg image not found"/>
+    <h1 class="logo-text flex-row center">zetterberg123</h1>
+    <!-- Navigation bar (for future pages) -->
+    <!-- <nav class="topnav flex-row center">
+      <div class="nav-item">Home</div>
+      <div class="nav-item">Socials</div>
+      <div class="nav-item">About Me</div>
+    </nav> -->
   </header>
 
-  <main>
-    <br/> <!-- Line break -->
-    <p class="wip-text">zetterberg123.com temporary website. <strong>Work in progress!</strong></p> <!-- paragraph -->
-    <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/q6EoRBvdVPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <main class="flex-column">
+    <h1 class="main-text"><strong>Student and game developer</strong></h1>
+    <section class="flex-row center" id="spawn" style="flex:1;">
+      <div class="flex-column center" style="width: auto;">
+        <h2>(>_<)</h2>
+        <p>Nothing to show yet...</p>
+      </div>
+
+      <!-- Placeholder boxes -->
+      <!-- <div class="flex-column center">
+        <h2>Project box</h2>
+        <img onclick="toggle(this)" src="https://dummyimage.com/1920x1080/cccccc/ffffff.png" alt="Project background, wizard.png">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus illo architecto facere hic minus consectetur dolore veritatis animi aliquid, eius eligendi dignissimos modi eveniet, adipisci, id officia deserunt accusamus fugiat.</p>
+      </div>
+
+      <div class="flex-column center">
+        <h2>Project box</h2>
+        <img onclick="toggle(this)" src="https://dummyimage.com/1000x100/cccccc/ffffff.png" alt="Project background, wizard.png">
+        <p> Hodor! Hodor hodor. Hodor hodor HODOR! Hodor. Hodor hodor! Hodor! Hodor hodor. Hodor hodor. Hodor, hodor, hodor hodor. Hodor, hodor, hodor hodor. HODOR hodor, hodor. Hodor? HODOR HODOR!</p>
+      </div>
+
+      <div class="flex-column center">
+        <h2>Project box</h2>
+        <img onclick="toggle(this)" src="https://dummyimage.com/500x500/cccccc/ffffff.png&text=500x500+max-height+300px+(Click+to+enlarge)" alt="Project background, wizard.png">
+        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+      </div> -->
+    </section>
   </main>
 
-  <footer>
-    <p class="git-text"><b>Hosted on GitHub pages:</b></p>
-    <a class="git-text" href="https://github.com/zetterberg123/website" target="_blank">GitHub repository</a>
+  <footer class="flex-row">
+    <p class="git-text"><b>Hosted on</b></p>
+    <a class="flex-row" id="scale" href="https://github.com/zetterberg123/website" target="_blank" rel="noopener noreferrer">
+      <img class="git-logo" src="images\GitHub-Logo.png" alt="GitHub-Logo.png">
+    </a>
+    <p class="git-text"><b>pages</b></p>
   </footer>
+
+  <script>
+    var time = 0;
+
+    // Expand image script
+    function toggle(x) {
+      var style = getComputedStyle(x);
+      // Gets and checks max-height to see if img need expanding 
+      // Removes unnecessary scrolling
+      if (x.style.maxHeight != "none" && x.clientHeight >= parseInt(style.getPropertyValue('max-height'))) { 
+        x.style.maxHeight = "none"; 
+        x.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+        console.log("if");
+      } 
+      else { x.style.maxHeight = ""; }
+    }
+
+    // Spawn cat easter egg script
+    function spawn() {
+      var div = document.createElement("div");
+      var img = document.createElement("img");
+      var h2 = document.createElement("h2");
+
+      time++;
+
+      h2.innerText = "Mau made by script number: " + (time);
+      div.classList.add("flex-row","center");
+      img.src = "https://loremflickr.com/500/500/cat,animal?random=" + Math.floor(Math.random() * 100);
+      img.onclick = function() { toggle(this); };
+
+      document.getElementById("spawn").appendChild(div);
+      div.appendChild(h2);
+      div.appendChild(img);
+
+      console.log("Easter egg found!");
+    }
+  </script>
 </body>
 </html>
