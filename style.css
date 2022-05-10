@@ -99,7 +99,7 @@ main > section div{
     background-size: cover;
 }
 
-main > section img{
+main > section img, video{
     width: 100%;
     max-height: 300px;
     object-fit: cover;
