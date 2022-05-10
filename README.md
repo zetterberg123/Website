@@ -4,6 +4,9 @@ https://www.zetterberg123.com/
 
 ## Changelog
 
+### 2022 changes
+- Added projects
+
 ### 2021 changes and final release
 
 > Ehh it could be better, but I think it came out ok.
