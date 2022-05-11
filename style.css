@@ -120,7 +120,7 @@ main h2{
 }
 
 main p{
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     color: white;
 }
