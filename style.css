@@ -5,6 +5,12 @@
     /* overflow-x: hidden; */
 }
 
+:root{
+    --main-text-color: white;
+    --main-background-color: rgba(0, 0, 0, 0.5);
+    --content-background-color: rgba(50, 50, 50, 0.8);
+}
+
 /* || General styles */
 body{
     background-color: #3F3F3F;
@@ -19,7 +25,7 @@ body{
 }
 
 header{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: var(--main-background-color);
     padding: 5px;
 }
 
@@ -30,7 +36,7 @@ main{
 }
 
 footer{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:var(--main-background-color);
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -54,22 +60,21 @@ footer{
 
 /* || Header and Main Navigation */
 .logo-text{
-    color: white;
+    color: var(--main-text-color);
     font-size: 40px;
+    font-weight: bold;
 }
 
 .nav-item{
-    color: lightgray;
+    color: var(--main-text-color);
     margin: auto 2%;
-    padding: 1px 20px;
     text-align: center;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-item:hover{
-    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
-    text-decoration:underline;
-    color: white;
+    filter: drop-shadow(0 0 4px rgb(255, 255, 255));
+    color: var(--main-text-color);
 }
 
 .logo-img{
@@ -81,64 +86,151 @@ footer{
 }
 
 /* || Main and project boxes */
-.main-text{
-    color: white;
+.main-header{
+    color: var(--main-text-color);
     font-size: 150%;
     margin: 2% auto;
     margin-top: 5%;
     text-align: center;
 }
 
-main > section div{
+.main-paragraph{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 1%;
+}
+
+.project-item{
     margin: 10px auto;
     width: 500px;
     height: 100%;
     padding: 10px;
-    background: rgba(50, 50, 50, 0.8);
+    background: var(--content-background-color);
     background-position: center;
     background-size: cover;
 }
 
-main > section img, video{
+.project-item img, .project-item video{
     width: 100%;
     max-height: 300px;
     object-fit: cover;
-    opacity: 0.8;
     margin: 5px 0;
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
     cursor: pointer;
+    transition: 0.1s all ease;
 }
 
-main > section img:hover{
-    opacity: 1;
+.project-item img:hover, .project-item video:hover{
     transform: scale(1.01);
 }
 
-main h2{
-    color: white;
+.project-item h2{
+    color: var(--main-text-color);
     text-align: center;
 }
 
-main p{
+.project-item p{
     text-align: left;
-    font-size: 18px;
-    color: white;
+    font-size: 16px;
+    color: var(--main-text-color);
 }
 
-main a:link {
-    color: white;
+.project-details {
+    justify-content: space-between;
+    margin-bottom: 5px;    
+}
+
+.project-details i{
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.button:link {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    color: var(--main-text-color);
     text-decoration: none;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-}
-  
-main a:visited {
-    color: lightgray;
-    text-shadow: 5px 5px 5px rgb(0, 0, 100);
+    background-color: rgba(80, 80, 80);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-main a:hover{
-    color: inherit;
-    text-shadow: 5px 5px 5px rgb(100, 100, 100);
+.button:hover{
+    color: var(--main-text-color);
+    background-color: rgba(70, 70, 70);
+}
+
+.button:visited{
+    color: var(--main-text-color);
+}
+
+/* || Image modal */
+.modal{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--main-text-color);
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content{
+    min-height: 95vh;
+}
+
+.modal-close{
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 50px;
+    cursor: pointer;
+}
+
+.modal-image, .modal-video{
+    display: none;
+    max-width: 80%;
+    max-height: 80vh;
+    animation: zoom 0.3s linear;
+}
+
+.modal-caption{
+    font-size: larger;
+    margin-top: 1em;
+    animation: zoom 0.3s linear;
+}
+
+.modal.appear, .modal-image.appear, .modal-video.appear{
+    display: block;
+
+}
+
+@keyframes zoom {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* || Contact page */
+.contact{
+    color: var(--main-text-color);
+    padding: 10px;
+    background: var(--content-background-color);
+    margin: 5vw;
+    font-size: 20px;
+}
+
+.contact i, .contact h1, .contact a{
+    margin: 15px;
 }
 
 /* || Footer */
@@ -148,6 +240,7 @@ main a:hover{
 }
 
 .git-text{
+    margin: auto 0;
     color: gray;
 }
 
@@ -162,7 +255,7 @@ main a:hover{
 /* || Responsive - Mobile layout only */
 @media (max-width: 600px) {
     #scale.flex-row{
-        flex-direction: column;
+        flex-direction: column!important;
     }
     .logo-img{
         margin: auto;
@@ -176,20 +269,24 @@ main a:hover{
     footer{
         border-radius: 10px 10px 0 0;
     }
-    main > section div{
-        border-radius: 50px;
+    .project-item{
+        border-radius: 30px;
         width: 100%;
     }
-    main > section img{
+    .project-item img, .project-item video{
         border-radius: 50px;
     }
-    main h2{
+    .project-item h2{
         font-size: 25px;
     }
-    main p{
+    .project-item p{
         font-size: 15px;
         padding: 0 5px;
         overflow-wrap: break-word;
+    }
+    .contact{
+        font-size: 5vw;
+        border-radius: 30px;
     }
 }
 
@@ -199,7 +296,7 @@ main a:hover{
         font-size: 12vw;
         padding: 5vw;
     }
-    .main-text{
+    .main-header{
         font-size: 8vw;
         padding: 5vw;
     }

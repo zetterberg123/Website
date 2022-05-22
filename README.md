@@ -5,6 +5,9 @@ https://www.zetterberg123.com/
 ## Changelog
 
 ### 2022 changes
+- Contact page
+- Icons and dates for projects 
+- Image/Video modal
 - Added projects
 
 ### 2021 changes and final release
