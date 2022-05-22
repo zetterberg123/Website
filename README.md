@@ -36,14 +36,14 @@ https://www.zetterberg123.com/
 
 ### Progress images
 - First iteration
-![img](images/progress/First-website.PNG)
+![img](images/progress/First-website.png)
 - Second iteration
-![img](images/progress/Second-website.PNG)
+![img](images/progress/Second-website.png)
 - Final iteration
 
     Desktop layout
 
-    ![img](images/progress/Final-website.PNG)
+    ![img](images/progress/Final-website.png)
     Mobile layout
 
-    ![img](images/progress/Final-mobile.PNG)
+    ![img](images/progress/Final-mobile.png)
