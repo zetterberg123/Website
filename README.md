@@ -4,6 +4,9 @@ https://www.zetterberg123.com/
 
 ## Changelog
 
+### Planned changes
+- Static Site Generator (Jekyll)
+
 ### 2022 changes
 - Contact page
 - Icons and dates for projects 
