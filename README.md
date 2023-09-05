@@ -4,8 +4,13 @@ https://www.zetterberg123.com/
 
 ## Changelog
 
-### Planned changes
-- Static Site Generator (Jekyll)
+### 2023 Planned changes
+- Fix links looking weird on Firefox
+- Update and add projects
+- Finalize about page
+- Update contact page
+- Remove or get new icon
+- Static Site Generator (Jekyll, Astro, SvelteKit or any of the other million generators)
 
 ### 2022 changes
 - Contact page
