@@ -8,6 +8,7 @@ https://www.zetterberg123.com/
 - Fix links looking weird on Firefox
 - Finalize about page
 - Update contact page
+- Optimize images and videos.
 - Update and add projects (one added)
 - Remove or get new icon (semi fixed)
 - Static Site Generator (Jekyll, Astro, SvelteKit or any of the other million generators). \
