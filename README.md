@@ -6,11 +6,15 @@ https://www.zetterberg123.com/
 
 ### 2023 Planned changes
 - Fix links looking weird on Firefox
-- Update and add projects
+- Update and add projects (one added)
 - Finalize about page
 - Update contact page
-- Remove or get new icon
+- Remove or get new icon (semi fixed)
 - Static Site Generator (Jekyll, Astro, SvelteKit or any of the other million generators)
+
+### 2023 changes
+- Update logo and favicon
+- One project added
 
 ### 2022 changes
 - Contact page
