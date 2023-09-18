@@ -6,11 +6,16 @@ https://www.zetterberg123.com/
 
 ### 2023 Planned changes
 - Fix links looking weird on Firefox
-- Update and add projects (one added)
 - Finalize about page
 - Update contact page
+- Update and add projects (one added)
 - Remove or get new icon (semi fixed)
-- Static Site Generator (Jekyll, Astro, SvelteKit or any of the other million generators)
+- Static Site Generator (Jekyll, Astro, SvelteKit or any of the other million generators). \
+End goal with this is to:
+    - Move projects out of index.html and into seperate markdown files.
+    - To implement separate pages for projects that allows longer descriptions with images.
+    - Highlight only a select few on the main page. Separate all projects page.
+    - Easier to add projects.
 
 ### 2023 changes
 - Update logo and favicon
