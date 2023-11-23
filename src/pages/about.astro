@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "About - zetterberg123";
+const pageDescription = "About me page";
+---
+
+<head>
+	<script src="https://kit.fontawesome.com/1f4bf5a1d2.js" crossorigin="anonymous"></script>
+</head>
+
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<h1 class="main-header"><strong>Here's a little bit of info about me.</strong></h1>
+	<p class="main-paragraph">WIP page</p>
+	<!-- About section -->
+	<section class="flex-row center" style="flex: 1;">
+
+		<div class="project-item flex-col center" style="font-size: 20px; color: white;">
+			<h1 style="margin-bottom: 10px;"><i class="fa-solid fa-user"></i> Hobbies</h1>
+			<ul>
+				<li>Computer games</li>
+				<li>Board games</li>
+				<li>Home lab (Server in projects)</li>
+				<li>Hiking</li>
+			</ul>
+		</div>
+
+		<div class="project-item flex-col center" style="font-size: 20px; color: white;">
+			<h1 style="margin-bottom: 10px;"><i class="fa-solid fa-gamepad"></i> Favorite games</h1>
+			<ul>
+				<li>Portal 2</li>
+				<li>Splatoon</li>
+				<li>Duck Game</li>
+				<li>The Legend of Zelda: Twilight Princess</li>
+			</ul>
+			<a class="button" style="margin-top: 10px;" href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-steam"></i> Steam Profile</a>
+		</div>
+
+		<div class="project-item flex-col center" style="font-size: 20px; color: white;">
+			<h1 style="margin-bottom: 10px;"><i class="fa-solid fa-bars"></i> Other</h1>
+			<ul>
+				<li>I own 3 lizards</li>
+				<p style="margin: 0 0 5px 10%; width: 100%; color: lightgray;">- 1 Crested gecko and 2 leopard geckos</p>
+				<li>Favorite snack</li>
+				<p style="margin: 0 0 5px 10%; width: 100%; color: lightgray;">- Crisps and salty liquorice</p>
+				<li>Favorite beverages</li>
+				<p style="margin: 0 0 5px 10%; width: 100%; color: lightgray;">- Saft, cider and coffee</p>
+			</ul>
+		</div>
+	</section>
+</BaseLayout>

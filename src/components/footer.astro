@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+import GitHubLogo from '../assets/github-logo.png';
+---
+
+<footer class="flex-row">
+	<p class="git-text"><b>Hosted on</b></p>
+	<a class="flex-row" href="https://github.com/zetterberg123/website" target="_blank" rel="noopener noreferrer">
+		<Image class="git-logo" src={GitHubLogo} alt="GitHub-Logo.png" />
+	</a>
+	<p class="git-text"><b>pages</b></p>
+</footer>

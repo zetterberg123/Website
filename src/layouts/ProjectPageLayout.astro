@@ -1,0 +1,25 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+	<h1 class="main-header"><strong>{frontmatter.title}</strong></h1>
+	<div class="flex-col center">
+		{
+			frontmatter.media.isVideo === false
+			? <img src={frontmatter.media.url} alt={frontmatter.media.alt} />
+			// @ts-expect-error
+			: <video autoplay loop muted> <source src={frontmatter.media.url} alt={frontmatter.media.alt}/> Your browser does not support the video tag. </video>
+		}
+		<p><em>{frontmatter.description}</em></p>
+		<p>{frontmatter.date}</p>
+		<div>
+			{frontmatter.icons.map((icon: string) => <i class={icon}></i>)}
+		</div>
+
+		<div style="margin: 5em; color:white;">
+			<slot />
+		</div>
+	</div>
+</BaseLayout>
