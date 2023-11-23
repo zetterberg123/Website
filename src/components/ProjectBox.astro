@@ -1,0 +1,20 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<div class="project-item flex-col">
+	<h2>{frontmatter.title}</h2>
+	{
+		frontmatter.media.isVideo === false
+		? <img src={frontmatter.media.url} alt={frontmatter.media.alt} />
+		// @ts-expect-error
+		: <video autoplay loop muted> <source src={frontmatter.media.url} alt={frontmatter.media.alt}/> Your browser does not support the video tag. </video>
+	}
+	<div class="flex-row project-details center">
+		<div class="flex-row">
+			{frontmatter.icons.map((icon: string) => <i class={icon}></i>)}
+		</div>
+		<p>{frontmatter.date}</p>
+	</div>
+	<p>{frontmatter.description}</p>
+</div>

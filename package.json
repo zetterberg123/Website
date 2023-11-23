@@ -1,0 +1,18 @@
+{
+	"name": "website",
+	"version": "2.0.0",
+	"description": "https://www.zetterberg123.com Personal portfolio website",
+	"main": "index.js",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"astro": "^3.5.4"
+	}
+}

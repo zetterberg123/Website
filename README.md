@@ -2,66 +2,45 @@
 
 https://www.zetterberg123.com/
 
-## Changelog
+Personal website built with astro
 
-### 2023 Planned changes
-- Fix links looking weird on Firefox
-- Finalize about page
-- Update contact page
-- Optimize images and videos.
-- Update and add projects (one added)
-- Remove or get new icon (semi fixed)
-- Static Site Generator (Jekyll, Astro, SvelteKit or any of the other million generators). \
-End goal with this is to:
-    - Move projects out of index.html and into seperate markdown files.
-    - To implement separate pages for projects that allows longer descriptions with images.
-    - Highlight only a select few on the main page. Separate all projects page.
-    - Easier to add projects.
+## Install
 
-### 2023 changes
-- Update logo and favicon
-- One project added
+Clone this repo and run from a terminal
 
-### 2022 changes
-- Contact page
-- Icons and dates for projects 
-- Image/Video modal
-- Added projects
+``` bash
+npm install
+```
 
-### 2021 changes and final release
+Then, to run locally with live reload:
 
-> Ehh it could be better, but I think it came out ok.
+``` bash
+npm run dev
+```
 
-- Final iteration and whole new design (kind of)
-    - Responsive flex layout (works on mobile)
-    - Everything is centered
-    - Mobile friendly rounded corner design (i hate it but it doesn't look out of place)
-    - Static background 
-    - Github logo link instead of text
-    - Header and footer are smaller
-    - Navigation bar (for future pages)
-    - Custom scrollbar
-    - Project boxes
-- Javascript
-    - Click image to expand
-    - Mau approved easter egg
+### Commands
 
-- robots.txt (excludes images from search engines)
+All commands are run from the root of the project, from a terminal:
 
-### 2020 changes temporary work in progress website
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## Progress images
 - First iteration
+![img](public/images/progress/First-website.png)
 - Second iteration
-
-### Progress images
-- First iteration
-![img](images/progress/First-website.png)
-- Second iteration
-![img](images/progress/Second-website.png)
+![img](public/images/progress/Second-website.png)
 - Final iteration
 
-    Desktop layout
+	Desktop layout
 
-    ![img](images/progress/Final-website.png)
-    Mobile layout
+	![img](public/images/progress/Final-website.png)
+	Mobile layout
 
-    ![img](images/progress/Final-mobile.png)
+	![img](public/images/progress/Final-mobile.png)

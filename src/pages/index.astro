@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectBox from '../components/ProjectBox.astro';
+import MediaModal from '../components/mediaModal.astro';
+
+const pageTitle = "zetterberg123";
+const pageDescription = "zetterberg123's portfolio website";
+const allProjects = await getCollection("projects");
+
+// Sort projects
+allProjects.sort((a, b) => Date.parse(b.data.date.slice(0,4)) - Date.parse(a.data.date.slice(0,4)));
+---
+
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<h1 class="main-header"><strong>Student and developer</strong></h1>
+
+	<!-- Project section || This is where I showcase all of my present and past work -->
+	<section class="flex-row projectSection" id="projects">
+		{
+			allProjects.map((project) => 
+			(
+				<ProjectBox frontmatter={project.data} />
+			))
+		}
+	</section>
+
+	<MediaModal/>
+
+	<script>
+		import "../scripts/catEasterEgg.ts";
+	</script>
+</BaseLayout>
+
+<style>
+	.projectSection{
+		padding: 1%;
+		justify-content: space-evenly;
+	}
+</style>

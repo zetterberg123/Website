@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.webp';
+---
+
+<header class="flex-row" id="scale">
+	<Image class="logo-img flex-row center" src={logo} alt="logo image"/>
+	<h1 class="logo-text flex-row center">zetterberg123</h1>
+	<!-- Navigation bar -->
+	<nav class="nav-links flex-row center">
+		<a class="button" href="/">Home</a>
+		<a class="button" href="/contact/">Contact</a>
+		<a class="button" href="/about/">About</a>
+	</nav>
+</header>

@@ -1,0 +1,7 @@
+// Workspace settings
+{
+    // The following will hide the node_modules folder in the editor
+    "files.exclude": {
+        "node_modules/": true,
+    }
+}
