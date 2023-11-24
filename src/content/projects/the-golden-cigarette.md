@@ -3,11 +3,17 @@ title: "The Golden Cigarette"
 date: "2022 - Present"
 description: "My current project where you play as a dude trying to conquer the golden cigarette hidden deep within the pyramids."
 media:
-    url: "/videos/TheGoldenCigarette.mp4"
-    alt: "The Golden Cigarette Render"
-    isVideo: true
-icons: ["devicon-unity-original colored", "devicon-visualstudio-plain colored", "devicon-blender-original colored"]
+  url: "/videos/TheGoldenCigarette.mp4"
+  alt: "The Golden Cigarette Render"
+  isVideo: true
+icons:
+  [
+    "devicon-unity-original colored",
+    "devicon-visualstudio-plain colored",
+    "devicon-blender-original colored",
+  ]
 ---
+
 # TheGoldenCigarette
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.

@@ -1,15 +1,15 @@
-/* 
-*	Spawn cat easter egg script
-*/
+/*
+ *	Spawn cat easter egg script
+ */
 import { toggle } from "./expandImage";
 
 // Find logo image and project section
-const logo = document.querySelector('.logo-img');
+const logo = document.querySelector(".logo-img");
 const projectsSection = document.getElementById("projects");
 let time = 0;
 
 // Handle clicks on logo.
-logo?.addEventListener('click', () => {
+logo?.addEventListener("click", () => {
 	spawn();
 });
 
@@ -22,12 +22,12 @@ function spawn() {
 	let h2 = document.createElement("h2");
 
 	// Add text, css and image
-	h2.innerText = "Mau made by script number: " + (time);
+	h2.innerText = "Mau made by script number: " + time;
 	div.classList.add("project-item", "flex-col");
 	img.src = "https://loremflickr.com/500/500/cat,animal?random=" + Math.floor(Math.random() * 100);
 
 	// Add event
-	img.addEventListener('click', () => {
+	img.addEventListener("click", () => {
 		toggle(img);
 	});
 

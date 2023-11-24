@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Contact - zetterberg123";
 const pageDescription = "Contact page";
@@ -11,23 +11,26 @@ const pageDescription = "Contact page";
 
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
 	<h1 class="main-header"><strong>Contact me!</strong></h1>
-	<p class="main-paragraph">Use links below if you want to contact me for any questions and/or request CV.</p>
+	<p class="main-paragraph">
+		Use links below if you want to contact me for any questions and/or
+		request CV.
+	</p>
 
 	<!-- Contact section || Links to where you can contact me -->
 	<section class="flex-row center" style="flex:1;">
 		<div class="contact">
-		<div class="flex-row center">
-			<i class="fa-brands fa-discord"></i>
-			<h1>Discord</h1>
-		</div>
-		<a class="button" href="https://discord.gg/p3maac63y3" target="_blank" rel="noopener noreferrer">Join Discord Guild</a>
+			<div class="flex-row center">
+				<i class="fa-brands fa-discord"></i>
+				<h1>Discord</h1>
+			</div>
+			<a class="button" href="https://discord.gg/p3maac63y3" target="_blank" rel="noopener noreferrer">Join Discord Guild</a>
 		</div>
 		<div class="contact">
-		<div class="flex-row center">
-			<i class="fa-solid fa-envelope"></i>
-			<h1>Email</h1>
-		</div>
-		<a class="button" href="mailto:contact@zetterberg123.com" target="_blank" rel="noopener noreferrer">contact@zetterberg123.com</a>
+			<div class="flex-row center">
+				<i class="fa-solid fa-envelope"></i>
+				<h1>Email</h1>
+			</div>
+			<a class="button" href="mailto:contact@zetterberg123.com" target="_blank" rel="noopener noreferrer">contact@zetterberg123.com</a>
 		</div>
 	</section>
 </BaseLayout>

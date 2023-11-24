@@ -1,20 +1,18 @@
 # Website
 
-https://www.zetterberg123.com/
-
 Personal website built with astro
 
 ## Install
 
 Clone this repo and run from a terminal
 
-``` bash
+```bash
 npm install
 ```
 
 Then, to run locally with live reload:
 
-``` bash
+```bash
 npm run dev
 ```
 
@@ -32,15 +30,16 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ## Progress images
+
 - First iteration
-![img](public/images/progress/First-website.png)
+  ![img](public/images/progress/First-website.png)
 - Second iteration
-![img](public/images/progress/Second-website.png)
+  ![img](public/images/progress/Second-website.png)
 - Final iteration
 
-	Desktop layout
+  Desktop layout
 
-	![img](public/images/progress/Final-website.png)
-	Mobile layout
+  ![img](public/images/progress/Final-website.png)
+  Mobile layout
 
-	![img](public/images/progress/Final-mobile.png)
+  ![img](public/images/progress/Final-mobile.png)

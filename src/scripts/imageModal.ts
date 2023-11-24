@@ -1,7 +1,7 @@
 /*
-*	Modal Script
-*	Display image/video in a popup when clicked
-*/
+ *	Modal Script
+ *	Display image/video in a popup when clicked
+ */
 const images = document.querySelectorAll<HTMLImageElement>(".project-item img");
 const videos = document.querySelectorAll<HTMLVideoElement>(".project-item video");
 const modal = {
@@ -46,11 +46,15 @@ videos.forEach((videoElement) => {
 function ShowModal(url: string, alt: string, isVideo: boolean) {
 	if (modal.root && modal.image && modal.video && modal.text) {
 		// Set content
-		isVideo ? modal.video.setAttribute("src", url) : modal.image.setAttribute("src", url);
+		isVideo
+			? modal.video.setAttribute("src", url)
+			: modal.image.setAttribute("src", url);
 		modal.text.innerHTML = alt;
 
 		// Enable
 		modal.root.classList.add("appear");
-		isVideo ? modal.video.classList.add("appear") : modal.image.classList.add("appear");
-	};
-};
+		isVideo
+			? modal.video.classList.add("appear")
+			: modal.image.classList.add("appear");
+	}
+}

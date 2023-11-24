@@ -14,5 +14,18 @@
 	"license": "ISC",
 	"dependencies": {
 		"astro": "^3.5.4"
+	},
+	"prettier": {
+		"tabWidth": 4,
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": "*.md",
+				"options": {
+					"tabWidth": 2,
+					"useTabs": false
+				}
+			}
+		]
 	}
 }
