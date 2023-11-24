@@ -1,15 +1,19 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from '../layouts/BaseLayout.astro';
-import ProjectBox from '../components/ProjectBox.astro';
-import MediaModal from '../components/mediaModal.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectBox from "../components/ProjectBox.astro";
+import MediaModal from "../components/mediaModal.astro";
 
 const pageTitle = "zetterberg123";
 const pageDescription = "zetterberg123's portfolio website";
 const allProjects = await getCollection("projects");
 
 // Sort projects
-allProjects.sort((a, b) => Date.parse(b.data.date.slice(0,4)) - Date.parse(a.data.date.slice(0,4)));
+allProjects.sort(
+	(a, b) =>
+		Date.parse(b.data.date.slice(0, 4)) -
+		Date.parse(a.data.date.slice(0, 4)),
+);
 ---
 
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
@@ -18,14 +22,13 @@ allProjects.sort((a, b) => Date.parse(b.data.date.slice(0,4)) - Date.parse(a.dat
 	<!-- Project section || This is where I showcase all of my present and past work -->
 	<section class="flex-row projectSection" id="projects">
 		{
-			allProjects.map((project) => 
-			(
+			allProjects.map((project) => (
 				<ProjectBox frontmatter={project.data} />
 			))
 		}
 	</section>
 
-	<MediaModal/>
+	<MediaModal />
 
 	<script>
 		import "../scripts/catEasterEgg.ts";
@@ -33,7 +36,7 @@ allProjects.sort((a, b) => Date.parse(b.data.date.slice(0,4)) - Date.parse(a.dat
 </BaseLayout>
 
 <style>
-	.projectSection{
+	.projectSection {
 		padding: 1%;
 		justify-content: space-evenly;
 	}

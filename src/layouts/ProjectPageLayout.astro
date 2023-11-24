@@ -15,7 +15,7 @@ const { frontmatter } = Astro.props;
 		<p><em>{frontmatter.description}</em></p>
 		<p>{frontmatter.date}</p>
 		<div>
-			{frontmatter.icons.map((icon: string) => <i class={icon}></i>)}
+			{frontmatter.icons.map((icon: string) => <i class={icon} />)}
 		</div>
 
 		<div style="margin: 5em; color:white;">

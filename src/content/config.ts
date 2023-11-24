@@ -3,7 +3,7 @@ import { z, defineCollection } from "astro:content";
 
 // Define a `type` and `schema` for each collection
 const projectsCollection = defineCollection({
-	type: 'content',
+	type: "content",
 	schema: z.object({
 		title: z.string(),
 		date: z.string(),
@@ -11,10 +11,10 @@ const projectsCollection = defineCollection({
 		media: z.object({
 			url: z.string(),
 			alt: z.string(),
-			isVideo: z.boolean()
+			isVideo: z.boolean(),
 		}),
-		icons: z.array(z.string())
-	})
+		icons: z.array(z.string()),
+	}),
 });
 
 // Export a single `collections` object to register your collection(s)
