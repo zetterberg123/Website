@@ -11,8 +11,8 @@ const allProjects = await getCollection("projects");
 // Sort projects
 allProjects.sort(
 	(a, b) =>
-		Date.parse(b.data.date.slice(0, 4)) -
-		Date.parse(a.data.date.slice(0, 4)),
+		Date.parse(b.data.dates.start + (b.data.dates.end ? "" : "-12")) -
+		Date.parse(a.data.dates.start + (a.data.dates.end ? "" : "-12")),
 );
 ---
 
@@ -20,7 +20,7 @@ allProjects.sort(
 	<h1 class="main-header"><strong>Student and developer</strong></h1>
 
 	<!-- Project section || This is where I showcase all of my present and past work -->
-	<section class="flex-row projectSection" id="projects">
+	<section class="flex-row center item-box-section projects" id="projects">
 		{
 			allProjects.map((project) => (
 				<ProjectBox frontmatter={project.data} />
@@ -34,10 +34,3 @@ allProjects.sort(
 		import "../scripts/catEasterEgg.ts";
 	</script>
 </BaseLayout>
-
-<style>
-	.projectSection {
-		padding: 1%;
-		justify-content: space-evenly;
-	}
-</style>

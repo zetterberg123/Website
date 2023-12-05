@@ -1,11 +1,11 @@
 ---
 title: "This website"
-date: "2020 - Present"
 description: "Personal portfolio website. Hosted with GitHub pages."
+dates:
+  start: "2020"
 media:
   url: "/images/progress/Final-website.png"
   alt: "Screenshot of this website"
-  isVideo: false
 icons:
   [
     "devicon-html5-plain colored",

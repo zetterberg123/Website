@@ -1,8 +1,18 @@
 ---
 const { frontmatter } = Astro.props;
+const startDate = String(frontmatter.dates.start).slice(0, 4);
+const endDate = String(frontmatter.dates.end).slice(0, 4);
+let date = "";
+
+// Format date string
+if (frontmatter.dates.end) {
+	date = startDate === endDate ? startDate : startDate + " - " + endDate;
+} else {
+	date = startDate + " - Present";
+}
 ---
 
-<div class="project-item flex-col">
+<div class="flex-col">
 	<h2>{frontmatter.title}</h2>
 	{
 		frontmatter.media.isVideo === false
@@ -10,11 +20,11 @@ const { frontmatter } = Astro.props;
 		// @ts-expect-error
 		: <video autoplay loop muted> <source src={frontmatter.media.url} alt={frontmatter.media.alt}/> Your browser does not support the video tag. </video>
 	}
-	<div class="flex-row project-details center">
+	<div class="flex-row center project-details">
 		<div class="flex-row">
 			{frontmatter.icons.map((icon: string) => <i class={icon} />)}
 		</div>
-		<p>{frontmatter.date}</p>
+		<p>{date}</p>
 	</div>
 	<p>{frontmatter.description}</p>
 </div>
