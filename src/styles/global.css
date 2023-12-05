@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
+	scrollbar-width: thin;
 }
 
 :root {
@@ -85,7 +86,7 @@ footer {
 	color: var(--main-text-color);
 }
 
-/* || Main and project boxes */
+/* || Main and item boxes */
 .main-header {
 	color: var(--main-text-color);
 	font-size: 150%;
@@ -95,16 +96,22 @@ footer {
 }
 
 .main-paragraph {
-	color: white;
+	color: var(--main-text-color);
 	font-size: 16px;
 	text-align: center;
 	margin: 1%;
 }
 
-.project-item {
+.item-box-section {
+	flex: 1;
+	padding: 1%;
+	justify-content: space-evenly;
+	color: var(--main-text-color);
+}
+
+.item-box-section > div {
 	margin: 10px;
 	padding: 10px;
-	width: 500px;
 	height: 100%;
 	background: var(--content-background-color);
 	background-position: center;
@@ -112,8 +119,12 @@ footer {
 	border-radius: 5px;
 }
 
-.project-item img,
-.project-item video {
+.item-box-section.projects > div {
+	width: 500px;
+}
+
+.item-box-section img,
+.item-box-section video {
 	width: 100%;
 	max-height: 300px;
 	object-fit: cover;
@@ -124,32 +135,47 @@ footer {
 	border-radius: 5px;
 }
 
-.project-item img:hover,
-.project-item video:hover {
+.item-box-section img:hover,
+.item-box-section video:hover {
 	transform: scale(1.01);
 }
 
-.project-item h2 {
-	color: var(--main-text-color);
+.item-box-section h1,
+.item-box-section h2,
+.item-box-section h3,
+.item-box-section h4,
+.item-box-section h5,
+.item-box-section h6 {
 	text-align: center;
 }
 
-.project-item p {
+.item-box-section p,
+.item-box-section a {
 	text-align: left;
-	font-size: 16px;
-	color: var(--main-text-color);
+	font-size: 1em;
 }
 
-.project-details {
+.item-box-section i {
+	margin: 0 2.5px;
+	font-size: 1.5em;
+}
+
+.item-box-section .project-details {
 	justify-content: space-between;
 	margin-bottom: 5px;
 }
 
-.project-details i {
-	margin-right: 5px;
-	font-size: 25px;
+.item-box-section.contact h1,
+.item-box-section.contact i{
+	font-size: 2em;
+	margin: 5px;
+
+}
+.item-box-section.contact a{
+	font-size: 1.5em;
 }
 
+/* || Button */
 .button:link {
 	-webkit-appearance: button;
 	-moz-appearance: button;
@@ -220,21 +246,6 @@ footer {
 	}
 }
 
-/* || Contact page */
-.contact {
-	color: var(--main-text-color);
-	padding: 10px;
-	background: var(--content-background-color);
-	margin: 5vw;
-	font-size: 20px;
-}
-
-.contact i,
-.contact h1,
-.contact a {
-	margin: 15px;
-}
-
 /* || Footer */
 .git-logo {
 	width: 60px;
@@ -268,23 +279,23 @@ footer {
 	footer {
 		border-radius: 10px 10px 0 0;
 	}
-	.project-item,
-	.project-item img,
-	.project-item video {
+	.item-box-section > div,
+	.item-box-section img,
+	.item-box-section video {
 		border-radius: 20px;
 		width: 100%;
 	}
-	.project-item h2 {
-		font-size: 25px;
-	}
-	.project-item p {
-		font-size: 15px;
-		padding: 0 5px;
-		overflow-wrap: break-word;
-	}
-	.contact {
+	.item-box-section h1,
+	.item-box-section h2,
+	.item-box-section h3,
+	.item-box-section h4,
+	.item-box-section h5,
+	.item-box-section h6,
+	.item-box-section.contact a {
 		font-size: 5vw;
-		border-radius: 30px;
+	}
+	.item-box-section p {
+		padding: 0 5px;
 	}
 }
 

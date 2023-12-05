@@ -1,11 +1,11 @@
 ---
 title: "Server"
-date: "2022 - Present"
 description: "Server for storage and a bunch of services."
+dates:
+  start: "2022-02"
 media:
   url: "/images/projects/server.jpg"
   alt: "Image of the server"
-  isVideo: false
 icons: ["devicon-linux-plain colored", "devicon-kubernetes-plain colored"]
 ---
 

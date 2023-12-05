@@ -1,11 +1,12 @@
 ---
 title: "Ping notifyer"
-date: "2021"
 description: "Sends a notification when ping gets a reply."
+dates:
+  start: "2021-10"
+  end: "2021-10"
 media:
   url: "/images/projects/Ping-Notifyer.png"
   alt: "Screenshot of a terminal running ping notifyer"
-  isVideo: false
 icons: ["devicon-python-plain colored", "devicon-vscode-plain colored"]
 ---
 

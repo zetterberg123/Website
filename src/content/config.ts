@@ -6,12 +6,15 @@ const projectsCollection = defineCollection({
 	type: "content",
 	schema: z.object({
 		title: z.string(),
-		date: z.string(),
 		description: z.string(),
+		dates: z.object({
+			start: z.string(),
+			end: z.string().optional(),
+		}),
 		media: z.object({
 			url: z.string(),
 			alt: z.string(),
-			isVideo: z.boolean(),
+			isVideo: z.boolean().default(false),
 		}),
 		icons: z.array(z.string()),
 	}),

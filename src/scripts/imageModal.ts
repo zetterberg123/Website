@@ -2,8 +2,8 @@
  *	Modal Script
  *	Display image/video in a popup when clicked
  */
-const images = document.querySelectorAll<HTMLImageElement>(".project-item img");
-const videos = document.querySelectorAll<HTMLVideoElement>(".project-item video");
+const images = document.querySelectorAll<HTMLImageElement>(".item-box-section img");
+const videos = document.querySelectorAll<HTMLVideoElement>(".item-box-section video");
 const modal = {
 	root: document.querySelector(".modal"),
 	image: document.querySelector(".modal img"),

@@ -1,7 +1,8 @@
 ---
 title: "The Golden Cigarette"
-date: "2022 - Present"
 description: "My current project where you play as a dude trying to conquer the golden cigarette hidden deep within the pyramids."
+dates:
+  start: "2022-04"
 media:
   url: "/videos/TheGoldenCigarette.mp4"
   alt: "The Golden Cigarette Render"

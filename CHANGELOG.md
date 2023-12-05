@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - css
 
-  - Fix links looking weird on Firefox
   - Finalize about page
   - Update contact page
   - Style markdown
@@ -29,7 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Static Site Generator
   - Highlight only a select few on the main page. Separate all projects page
-  - Optional manual sort of projects
 
 <!-- 2.0.0 -->
 
@@ -44,13 +42,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Separate pages for projects that allows longer descriptions with images
 
 - robots.txt disallow \_astro
+- Linkdin profile to contact page
 
 ### Fixed
+
+- Links looking weird on Firefox
 
 ### Changed
 
 - Image/Video alt for all projects
 - Refactor and convert all js to typescript
+- Contact page discord link
 
 ### Removed
 

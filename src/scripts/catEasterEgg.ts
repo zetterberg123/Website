@@ -23,7 +23,7 @@ function spawn() {
 
 	// Add text, css and image
 	h2.innerText = "Mau made by script number: " + time;
-	div.classList.add("project-item", "flex-col");
+	div.classList.add("flex-col");
 	img.src = "https://loremflickr.com/500/500/cat,animal?random=" + Math.floor(Math.random() * 100);
 
 	// Add event
