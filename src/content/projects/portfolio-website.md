@@ -14,6 +14,14 @@ icons:
     "devicon-devicon-plain colored",
     "devicon-github-original colored",
   ]
+links:
+  [
+    {
+      name: "GitHub repository",
+      url: "https://github.com/zetterberg123/Ping-Notifyer",
+      icon: "devicon-github-original colored",
+    },
+  ]
 ---
 
 # This website

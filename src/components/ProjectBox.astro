@@ -1,11 +1,18 @@
 ---
-const { frontmatter } = Astro.props;
-const startDate = String(frontmatter.dates.start).slice(0, 4);
-const endDate = String(frontmatter.dates.end).slice(0, 4);
-let date = "";
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+	project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const data = project.data;
+
+const startDate = String(data.dates.start).slice(0, 4);
+const endDate = String(data.dates.end).slice(0, 4);
+let date;
 
 // Format date string
-if (frontmatter.dates.end) {
+if (data.dates.end) {
 	date = startDate === endDate ? startDate : startDate + " - " + endDate;
 } else {
 	date = startDate + " - Present";
@@ -13,18 +20,36 @@ if (frontmatter.dates.end) {
 ---
 
 <div class="flex-col">
-	<h2>{frontmatter.title}</h2>
+	<h2>{data.title}</h2>
 	{
-		frontmatter.media.isVideo === false
-		? <img src={frontmatter.media.url} alt={frontmatter.media.alt} />
+		data.media.isVideo === false
+		? <img src={data.media.url} alt={data.media.alt} />
 		// @ts-expect-error
-		: <video autoplay loop muted> <source src={frontmatter.media.url} alt={frontmatter.media.alt}/> Your browser does not support the video tag. </video>
+		: <video autoplay loop muted> <source src={data.media.url} alt={data.media.alt}/> Your browser does not support the video tag. </video>
 	}
 	<div class="flex-row center project-details">
 		<div class="flex-row">
-			{frontmatter.icons.map((icon: string) => <i class={icon} />)}
+			{data.icons.map((icon: string) => <i class={icon} />)}
 		</div>
 		<p>{date}</p>
 	</div>
-	<p>{frontmatter.description}</p>
+	<p set:html={data.description}></p>
+	{
+		data.links && (
+			<div class="flex-row center">
+				{data.links?.map((link) => (
+					<a
+						class="button flex-row center"
+						style="margin: 5px 5px 0 5px; flex-grow: 1;"
+						href={link.url}
+						target={link.newTab ? "_blank" : "_self"}
+						rel="noopener noreferrer"
+					>
+						{link.icon && <i class={link.icon} />}
+						{link.name ? link.name : link.url}
+					</a>
+				))}
+			</div>
+		)
+	}
 </div>
