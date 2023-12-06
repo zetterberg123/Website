@@ -23,7 +23,3 @@ links:
 ---
 
 # The Phantoms of the Co-Opera
-
-## link
-
-<https://futuregames.itch.io/the-phantoms-of-the-co-opera>

@@ -16,7 +16,3 @@ icons:
 ---
 
 # Unnamed project
-
-## Link
-
-<https://github.com/zetterberg123/Ping-Notifyer>

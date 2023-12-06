@@ -18,14 +18,10 @@ links:
   [
     {
       name: "GitHub repository",
-      url: "https://github.com/zetterberg123/Ping-Notifyer",
+      url: "https://github.com/zetterberg123/website",
       icon: "devicon-github-original colored",
     },
   ]
 ---
 
 # This website
-
-## Link
-
-https://github.com/zetterberg123/Ping-Notifyer

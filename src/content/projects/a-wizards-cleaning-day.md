@@ -23,7 +23,3 @@ links:
 ---
 
 # A wizards cleaning day
-
-## Link
-
-https://zetterberg123.itch.io/a-wizards-cleaning-day

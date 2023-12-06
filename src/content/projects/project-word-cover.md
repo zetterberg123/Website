@@ -19,7 +19,3 @@ links:
 ---
 
 # Project word cover
-
-## Link
-
-https://github.com/zetterberg123/Encryption-app
