@@ -13,6 +13,13 @@ icons:
     "devicon-visualstudio-plain colored",
     "devicon-photoshop-plain colored",
   ]
+links:
+  [
+    {
+      name: "itch.io",
+      url: "https://zetterberg123.itch.io/a-wizards-cleaning-day",
+    },
+  ]
 ---
 
 # A wizards cleaning day

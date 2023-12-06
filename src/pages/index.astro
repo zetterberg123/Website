@@ -23,7 +23,7 @@ allProjects.sort(
 	<section class="flex-row center item-box-section projects" id="projects">
 		{
 			allProjects.map((project) => (
-				<ProjectBox frontmatter={project.data} />
+				<ProjectBox project={project} />
 			))
 		}
 	</section>

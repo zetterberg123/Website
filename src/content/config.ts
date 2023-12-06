@@ -17,6 +17,14 @@ const projectsCollection = defineCollection({
 			isVideo: z.boolean().default(false),
 		}),
 		icons: z.array(z.string()),
+		links: z.array(
+			z.object({
+				url: z.string(),
+				name: z.string().optional(),
+				icon: z.string().optional(),
+				newTab: z.boolean().default(true),
+			})
+		).optional(),
 	}),
 });
 
