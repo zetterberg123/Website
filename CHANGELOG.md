@@ -10,15 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - css
 
   - Finalize about page
-  - Update contact page
   - Style markdown
   - Refactor
 
 - other
 
-  - Buttons for project box:\
-    Show button to page if it exists\
-    Button to github/itch.
   - Optimize images and videos (semi fixed)
   - Add projects
   - New favicon (semi fixed)
@@ -41,8 +37,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Moved projects out of index.html and into seperate markdown files
   - Separate pages for projects that allows longer descriptions with images
 
+- Buttons/Links on project box
 - robots.txt disallow \_astro
 - Linkdin profile to contact page
+- This changelog
 
 ### Fixed
 

@@ -19,7 +19,3 @@ links:
 ---
 
 # Ping notifyer
-
-## Link
-
-https://github.com/zetterberg123/Ping-Notifyer
