@@ -1,21 +1,29 @@
 ---
+import { Icon } from 'astro-icon'
 import BaseLayout from "./BaseLayout.astro";
-const { frontmatter } = Astro.props;
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const data = project.data;
 ---
 
-<BaseLayout pageTitle={frontmatter.title}>
-	<h1 class="main-header"><strong>{frontmatter.title}</strong></h1>
+<BaseLayout pageTitle={data.title}>
+	<h1 class="main-header"><strong>{data.title}</strong></h1>
 	<div class="flex-col center">
 		{
-			frontmatter.media.isVideo === false
-			? <img src={frontmatter.media.url} alt={frontmatter.media.alt} />
+			data.media.isVideo === false
+			? <img src={data.media.url} alt={data.media.alt} />
 			// @ts-expect-error
-			: <video autoplay loop muted> <source src={frontmatter.media.url} alt={frontmatter.media.alt}/> Your browser does not support the video tag. </video>
+			: <video autoplay loop muted> <source src={data.media.url} alt={data.media.alt}/> Your browser does not support the video tag. </video>
 		}
-		<p><em>{frontmatter.description}</em></p>
-		<p>{frontmatter.date}</p>
+		<p><em>{data.description}</em></p>
+		<p>{data.dates.start + " " + data.dates.end}</p>
 		<div>
-			{frontmatter.icons.map((icon: string) => <i class={icon} />)}
+			{data.icons.map((icon: string) => <Icon name={icon} height="1em" width="1em" />)}
 		</div>
 
 		<div style="margin: 5em; color:white;">

@@ -7,12 +7,7 @@ dates:
 media:
   url: "/images/projects/planet.png"
   alt: "Screenshot of the games skybox"
-icons:
-  [
-    "devicon-unity-original colored",
-    "devicon-visualstudio-plain colored",
-    "devicon-blender-original colored",
-  ]
+icons: ["unity", "visual-studio", "blender"]
 ---
 
 # Unnamed project

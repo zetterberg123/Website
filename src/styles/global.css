@@ -155,7 +155,7 @@ footer {
 	font-size: 1em;
 }
 
-.item-box-section i {
+.item-box-section svg {
 	margin: 0 2.5px;
 	font-size: 1.5em;
 }
@@ -166,12 +166,11 @@ footer {
 }
 
 .item-box-section.contact h1,
-.item-box-section.contact i{
+.item-box-section.contact svg {
 	font-size: 2em;
 	margin: 5px;
-
 }
-.item-box-section.contact a{
+.item-box-section.contact a {
 	font-size: 1.5em;
 }
 

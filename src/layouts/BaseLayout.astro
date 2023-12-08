@@ -3,8 +3,14 @@ import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 import "../styles/global.css";
 
-const { pageTitle } = Astro.props;
-const { pageDescription } = Astro.props;
+interface Props {
+	pageTitle: string;
+	pageDescription?: string;
+	header?: boolean;
+	footer?: boolean;
+}
+
+const { pageTitle, pageDescription, header=true, footer=true } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -17,16 +23,15 @@ const { pageDescription } = Astro.props;
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
 		<title>{pageTitle}</title>
 
-		<!--google font link and icons-->
+		<!--google font link-->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
 	</head>
 	<body>
-		<Header />
+		{header && <Header />}
 		<main>
 			<slot />
 		</main>
-		<Footer />
+		{footer && <Footer />}
 		<script>
 			import "../scripts/imageModal.ts";
 		</script>

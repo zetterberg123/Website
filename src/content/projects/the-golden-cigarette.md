@@ -7,12 +7,7 @@ media:
   url: "/videos/TheGoldenCigarette.mp4"
   alt: "The Golden Cigarette Render"
   isVideo: true
-icons:
-  [
-    "devicon-unity-original colored",
-    "devicon-visualstudio-plain colored",
-    "devicon-blender-original colored",
-  ]
+icons: ["unity", "visual-studio", "blender"]
 ---
 
 # TheGoldenCigarette

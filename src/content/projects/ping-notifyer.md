@@ -7,13 +7,13 @@ dates:
 media:
   url: "/images/projects/Ping-Notifyer.png"
   alt: "Screenshot of a terminal running ping notifyer"
-icons: ["devicon-python-plain colored", "devicon-vscode-plain colored"]
+icons: ["python", "vscode"]
 links:
   [
     {
       name: "GitHub repository",
       url: "https://github.com/zetterberg123/Ping-Notifyer",
-      icon: "devicon-github-original colored",
+      icon: "github",
     },
   ]
 ---

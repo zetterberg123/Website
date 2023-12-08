@@ -1,13 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Icon } from 'astro-icon'
 
 const pageTitle = "Contact - zetterberg123";
 const pageDescription = "Contact page";
 ---
-
-<head>
-	<script src="https://kit.fontawesome.com/1f4bf5a1d2.js" crossorigin="anonymous"></script>
-</head>
 
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
 	<h1 class="main-header"><strong>Contact me!</strong></h1>
@@ -20,21 +17,21 @@ const pageDescription = "Contact page";
 	<section class="flex-row center item-box-section contact">
 		<div class="flex-col">
 			<div class="flex-row center">
-				<i class="fa-brands fa-discord"></i>
+				<Icon name="discord" height="1em" width="1em" />
 				<h1>Discord</h1>
 			</div>
 			<a class="button flex-row center" href="https://discordapp.com/users/137319967136808960" target="_blank" rel="noopener noreferrer">Message on Discord</a>
 		</div>
 		<div class="flex-col">
 			<div class="flex-row center">
-				<i class="fa-solid fa-envelope"></i>
+				<Icon name="email" height="1em" width="1em" />
 				<h1>Email</h1>
 			</div>
 			<a class="button flex-row center" href="mailto:contact@zetterberg123.com" target="_blank" rel="noopener noreferrer">contact@zetterberg123.com</a>
 		</div>
 		<div class="flex-col">
 			<div class="flex-row center">
-				<i class="fa-brands fa-linkedin"></i>
+				<Icon name="linkedin" height="1em" width="1em" />
 				<h1>Linkedin</h1>
 			</div>
 			<a class="button flex-row center" href="https://www.linkedin.com/in/sebastian-zetterberg/" target="_blank" rel="noopener noreferrer">Message on Linkedin</a>
