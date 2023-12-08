@@ -7,17 +7,13 @@ dates:
 media:
   url: "/images/projects/wizard.png"
   alt: "Cover for the game"
-icons:
-  [
-    "devicon-unity-original colored",
-    "devicon-visualstudio-plain colored",
-    "devicon-photoshop-plain colored",
-  ]
+icons: ["unity", "visual-studio", "photoshop"]
 links:
   [
     {
-      name: "itch.io",
+      name: "Play on itch.io",
       url: "https://zetterberg123.itch.io/a-wizards-cleaning-day",
+      icon: "itchio",
     },
   ]
 ---

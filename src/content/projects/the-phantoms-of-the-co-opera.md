@@ -7,17 +7,13 @@ dates:
 media:
   url: "/images/projects/phantom.webp"
   alt: "The Phantoms of the Co-Opera main menu screen"
-icons:
-  [
-    "devicon-unity-original colored",
-    "devicon-visualstudio-plain colored",
-    "devicon-blender-original colored",
-  ]
+icons: ["unity", "visual-studio", "blender"]
 links:
   [
     {
-      name: "itch.io",
+      name: "Play on itch.io",
       url: "https://futuregames.itch.io/the-phantoms-of-the-co-opera",
+      icon: "itchio",
     },
   ]
 ---

@@ -7,12 +7,7 @@ dates:
 media:
   url: "/images/projects/projekt-summer.png"
   alt: "Fancy image of a flashlight from the game"
-icons:
-  [
-    "devicon-unity-original colored",
-    "devicon-visualstudio-plain colored",
-    "devicon-blender-original colored",
-  ]
+icons: ["unity", "visual-studio", "blender"]
 ---
 
 # Projekt summer

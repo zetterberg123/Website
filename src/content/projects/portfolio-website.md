@@ -6,20 +6,13 @@ dates:
 media:
   url: "/images/progress/Final-website.png"
   alt: "Screenshot of this website"
-icons:
-  [
-    "devicon-html5-plain colored",
-    "devicon-css3-plain colored",
-    "devicon-javascript-plain colored",
-    "devicon-devicon-plain colored",
-    "devicon-github-original colored",
-  ]
+icons: ["html5", "css3", "typescript", "astro", "github"]
 links:
   [
     {
       name: "GitHub repository",
       url: "https://github.com/zetterberg123/website",
-      icon: "devicon-github-original colored",
+      icon: "github",
     },
   ]
 ---

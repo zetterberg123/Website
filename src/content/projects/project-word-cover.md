@@ -7,13 +7,13 @@ dates:
 media:
   url: "/images/projects/Encryption-app.png"
   alt: "Screenshot of Project word cover"
-icons: ["devicon-csharp-plain colored", "devicon-visualstudio-plain colored"]
+icons: ["csharp", "visual-studio"]
 links:
   [
     {
       name: "GitHub repository",
       url: "https://github.com/zetterberg123/Encryption-app",
-      icon: "devicon-github-original colored",
+      icon: "github",
     },
   ]
 ---

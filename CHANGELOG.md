@@ -7,23 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Planned]
 
-- css
-
-  - Finalize about page
+- Tooltip for icons
+- Finalize about page
+- Make better description in readme
+- local font file
+- Projects
+  - Add more
+  - Write articles
   - Style markdown
-  - Refactor
-
-- other
-
-  - Optimize images and videos (semi fixed)
-  - Add projects
-  - New favicon (semi fixed)
-  - Make better description in readme
-  - Add rss and sitemap
+- Images
+  - Optimize images and videos
   - replace The Phantoms of the Co-Opera image
-
-- Static Site Generator
+  - New favicon
+- Potential changes
   - Highlight only a select few on the main page. Separate all projects page
+  - Add rss and sitemap
 
 <!-- 2.0.0 -->
 
@@ -51,6 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Image/Video alt for all projects
 - Refactor and convert all js to typescript
 - Contact page discord link
+- SVG icons instead of icon fonts
 
 ### Removed
 

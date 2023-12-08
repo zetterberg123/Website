@@ -6,7 +6,7 @@ dates:
 media:
   url: "/images/projects/server.jpg"
   alt: "Image of the server"
-icons: ["devicon-linux-plain colored", "devicon-kubernetes-plain colored"]
+icons: ["linux", "kubernetes"]
 ---
 
 # Server
