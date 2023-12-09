@@ -5,7 +5,7 @@ dates:
   start: "2020-11"
   end: "2021-06"
 media:
-  url: "/images/projects/planet.png"
+  url: "/images/projects/planet.webp"
   alt: "Screenshot of the games skybox"
 icons: ["unity", "visual-studio", "blender"]
 ---

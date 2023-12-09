@@ -5,7 +5,7 @@ dates:
   start: "2020-04"
   end: "2020-04"
 media:
-  url: "/images/projects/wizard.png"
+  url: "/images/projects/wizard.webp"
   alt: "Cover for the game"
 icons: ["unity", "visual-studio", "photoshop"]
 links:
