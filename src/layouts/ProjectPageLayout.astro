@@ -1,10 +1,10 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 import BaseLayout from "./BaseLayout.astro";
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-	project: CollectionEntry<'projects'>;
+	project: CollectionEntry<"projects">;
 }
 
 const { project } = Astro.props;

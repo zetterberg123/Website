@@ -1,8 +1,8 @@
 ---
-import { Icon } from 'astro-icon'
-import type { CollectionEntry } from 'astro:content';
+import { Icon } from "astro-icon";
+import type { CollectionEntry } from "astro:content";
 interface Props {
-	project: CollectionEntry<'projects'>;
+	project: CollectionEntry<"projects">;
 }
 
 const { project } = Astro.props;
@@ -34,7 +34,7 @@ if (data.dates.end) {
 		</div>
 		<p>{date}</p>
 	</div>
-	<p set:html={data.description}></p>
+	<p set:html={data.description} />
 	{
 		data.links && (
 			<div class="flex-row center">

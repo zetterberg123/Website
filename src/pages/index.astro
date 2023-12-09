@@ -20,12 +20,8 @@ allProjects.sort(
 	<h1 class="main-header">Student and developer</h1>
 
 	<!-- Project section || This is where I showcase all of my present and past work -->
-	<section class="flex-row center item-box-section projects" id="projects">
-		{
-			allProjects.map((project) => (
-				<ProjectBox project={project} />
-			))
-		}
+	<section class="flex-row item-box-section projects" id="projects">
+		{allProjects.map((project) => <ProjectBox project={project} />)}
 	</section>
 
 	<MediaModal />
