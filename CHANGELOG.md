@@ -10,7 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tooltip for icons
 - Finalize about page
 - Make better description in readme
-- local font file
 - Projects
   - Add more
   - Write articles
@@ -51,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactor and convert all js to typescript
 - Contact page discord link
 - SVG icons instead of icon fonts
+- local font files
 
 ### Removed
 
