@@ -16,8 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Style markdown
 - Images
   - Optimize videos
-  - replace The Phantoms of the Co-Opera image
-  - New favicon
 - Potential changes
   - Highlight only a select few on the main page. Separate all projects page
   - Add rss and sitemap
@@ -42,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Links looking weird on Firefox
+- The Phantoms of the Co-Opera image
 
 ### Changed
 
@@ -50,7 +49,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactor and convert all js to typescript
 - Contact page discord link
 - SVG icons instead of icon fonts
-- local font files
+- Local font files
+- Favicon
 
 ### Removed
 
