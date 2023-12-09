@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "404 - zetterberg123";
+const pageDescription = "404: Not found";
+---
+
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
+	<section class="flex-col center item-box-section">
+		<div class="flex-col center">
+			<h1>{pageDescription}</h1>
+			<a class="button flex-row center" href="/" rel="noopener noreferrer">Return to home page</a>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	div {
+		font-size: 2em;
+	}
+	div h1,
+	div a {
+		margin: 10px;
+	}
+</style>
