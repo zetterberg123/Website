@@ -32,10 +32,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Moved projects out of index.html and into seperate markdown files
   - Separate pages for projects that allows longer descriptions with images
 
+- Linkdin profile to contact page
 - Buttons/Links on project box
 - robots.txt disallow \_astro
-- Linkdin profile to contact page
 - This changelog
+- 404 page
 
 ### Fixed
 
