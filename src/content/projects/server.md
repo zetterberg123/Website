@@ -4,7 +4,7 @@ description: "Server for storage and a bunch of services."
 dates:
   start: "2022-02"
 media:
-  url: "/images/projects/server.jpg"
+  url: "/images/projects/server.webp"
   alt: "Image of the server"
 icons: ["linux", "kubernetes"]
 ---

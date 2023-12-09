@@ -5,7 +5,7 @@ dates:
   start: "2021-06"
   end: "2021-06"
 media:
-  url: "/images/projects/Encryption-app.png"
+  url: "/images/projects/encryption-app.webp"
   alt: "Screenshot of Project word cover"
 icons: ["csharp", "visual-studio"]
 links:
