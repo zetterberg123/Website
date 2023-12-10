@@ -20,9 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Highlight only a select few on the main page. Separate all projects page
   - Add rss and sitemap
 
-<!-- 2.0.0 -->
-
-## [Unreleased]
+## [2.0.0] 2023-12-10
 
 ### Added
 
