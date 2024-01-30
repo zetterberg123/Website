@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /images/
 Disallow: /videos/
 Disallow: /_astro/
+
+Sitemap: https://www.zetterberg123.com/sitemap-index.xml

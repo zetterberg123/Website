@@ -13,12 +13,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Projects
   - Add more
   - Write articles
-  - Style markdown
 - Images
   - Optimize videos
 - Potential changes
   - Highlight only a select few on the main page. Separate all projects page
-  - Add rss and sitemap
+  - Add rss
+
+## [2.1.0] 2024-01-30
+
+### Added
+
+- Tailwind\
+  Somewhat style markdown
+- Analytics\
+  Self-Hosted [Plausible](https://plausible.io)
+- Sitemap
+
+### Changed
+
+- Upgrade dependencies
+
+### Fixed
+
+- Unity logo colors
+- itch.io, discord, user and bars logo size
 
 ## [2.0.0] 2023-12-10
 

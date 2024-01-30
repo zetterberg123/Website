@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const pageTitle = "Contact - zetterberg123";
 const pageDescription = "Contact page";
@@ -17,21 +17,21 @@ const pageDescription = "Contact page";
 	<section class="flex-row center item-box-section contact">
 		<div class="flex-col">
 			<div class="flex-row center">
-				<Icon name="discord" height="1em" width="1em" />
+				<Icon name="discord" />
 				<h1>Discord</h1>
 			</div>
 			<a class="button flex-row center" href="https://discordapp.com/users/137319967136808960" target="_blank" rel="noopener noreferrer">Message on Discord</a>
 		</div>
 		<div class="flex-col">
 			<div class="flex-row center">
-				<Icon name="email" height="1em" width="1em" />
+				<Icon name="email" />
 				<h1>Email</h1>
 			</div>
 			<a class="button flex-row center" href="mailto:contact@zetterberg123.com" target="_blank" rel="noopener noreferrer">contact@zetterberg123.com</a>
 		</div>
 		<div class="flex-col">
 			<div class="flex-row center">
-				<Icon name="linkedin" height="1em" width="1em" />
+				<Icon name="linkedin" />
 				<h1>Linkedin</h1>
 			</div>
 			<a class="button flex-row center" href="https://www.linkedin.com/in/sebastian-zetterberg/" target="_blank" rel="noopener noreferrer">Message on Linkedin</a>

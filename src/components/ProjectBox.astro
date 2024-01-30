@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import type { CollectionEntry } from "astro:content";
 interface Props {
 	project: CollectionEntry<"projects">;
@@ -30,7 +30,7 @@ if (data.dates.end) {
 	}
 	<div class="flex-row center project-details">
 		<div class="flex-row">
-			{data.icons.map((icon: string) => <Icon name={icon} height="1em" width="1em" />)}
+			{data.icons.map((icon: string) => <Icon name={icon} />)}
 		</div>
 		<p>{date}</p>
 	</div>
@@ -46,7 +46,7 @@ if (data.dates.end) {
 						target={link.newTab ? "_blank" : "_self"}
 						rel="noopener noreferrer"
 					>
-						{link.icon && <Icon name={link.icon} height="1em" width="1em" />}
+						{link.icon && <Icon name={link.icon} />}
 						{link.name ? link.name : link.url}
 					</a>
 				))}

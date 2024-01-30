@@ -123,8 +123,7 @@ footer {
 	width: 500px;
 }
 
-.item-box-section img,
-.item-box-section video {
+.item-box-section :is(:where(img, video):not(:where([class~="item-box-ignore"], [class~="item-box-ignore"] *))) {
 	width: 100%;
 	max-height: 300px;
 	object-fit: cover;
@@ -135,22 +134,15 @@ footer {
 	border-radius: 5px;
 }
 
-.item-box-section img:hover,
-.item-box-section video:hover {
+.item-box-section :is(:where(img:hover, video:hover):not(:where([class~="item-box-ignore"], [class~="item-box-ignore"] *))) {
 	transform: scale(1.01);
 }
 
-.item-box-section h1,
-.item-box-section h2,
-.item-box-section h3,
-.item-box-section h4,
-.item-box-section h5,
-.item-box-section h6 {
+.item-box-section :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="item-box-ignore"], [class~="item-box-ignore"] *))) {
 	text-align: center;
 }
 
-.item-box-section p,
-.item-box-section a {
+.item-box-section :is(:where(p, a):not(:where([class~="item-box-ignore"], [class~="item-box-ignore"] *))) {
 	text-align: left;
 	font-size: 1em;
 }
@@ -165,11 +157,11 @@ footer {
 	margin-bottom: 5px;
 }
 
-.item-box-section.contact h1,
-.item-box-section.contact svg {
+.item-box-section.contact :is(h1, svg) {
 	font-size: 2em;
 	margin: 5px;
 }
+
 .item-box-section.contact a {
 	font-size: 1.5em;
 }
@@ -217,8 +209,7 @@ footer {
 	z-index: 1;
 }
 
-.modal img,
-.modal video {
+.modal :is(img, video) {
 	display: none;
 	max-width: 90vw;
 	max-height: 80vh;
@@ -279,21 +270,15 @@ footer {
 		border-radius: 10px 10px 0 0;
 	}
 	.item-box-section > div,
-	.item-box-section img,
-	.item-box-section video {
+	.item-box-section :is(:where(img, video):not(:where([class~="item-box-ignore"], [class~="item-box-ignore"] *))) {
 		border-radius: 20px;
 		width: 100%;
 	}
-	.item-box-section h1,
-	.item-box-section h2,
-	.item-box-section h3,
-	.item-box-section h4,
-	.item-box-section h5,
-	.item-box-section h6,
+	.item-box-section :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="item-box-ignore"], [class~="item-box-ignore"] *))),
 	.item-box-section.contact a {
 		font-size: 5vw;
 	}
-	.item-box-section p {
+	.item-box-section :where(p):not(:where([class~="item-box-ignore"], [class~="item-box-ignore"] *)) {
 		padding: 0 5px;
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"name": "website",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "https://www.zetterberg123.com Personal portfolio website",
 	"main": "index.js",
 	"scripts": {
@@ -12,9 +12,6 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"dependencies": {
-		"astro": "^4.0.2"
-	},
 	"prettier": {
 		"tabWidth": 4,
 		"useTabs": true,
@@ -28,7 +25,12 @@
 			}
 		]
 	},
-	"devDependencies": {
-		"astro-icon": "^0.8.2"
+	"dependencies": {
+		"astro": "^4.2.6",
+		"astro-icon": "^1.0.4",
+		"tailwindcss": "^3.4.1",
+		"@astrojs/sitemap": "^3.0.5",
+		"@astrojs/tailwind": "^5.1.0",
+		"@tailwindcss/typography": "^0.5.10"
 	}
 }

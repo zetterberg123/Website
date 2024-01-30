@@ -1,7 +1,8 @@
 ---
-import { Icon } from "astro-icon";
 import BaseLayout from "./BaseLayout.astro";
+import ProjectBox from "../components/ProjectBox.astro";
 import type { CollectionEntry } from "astro:content";
+import "../styles/tailwind.css";
 
 interface Props {
 	project: CollectionEntry<"projects">;
@@ -12,22 +13,26 @@ const data = project.data;
 ---
 
 <BaseLayout pageTitle={data.title}>
-	<h1 class="main-header"><strong>{data.title}</strong></h1>
-	<div class="flex-col center">
-		{
-			data.media.isVideo === false
-			? <img src={data.media.url} alt={data.media.alt} />
-			// @ts-expect-error
-			: <video autoplay loop muted> <source src={data.media.url} alt={data.media.alt}/> Your browser does not support the video tag. </video>
-		}
-		<p><em>{data.description}</em></p>
-		<p>{data.dates.start + " " + data.dates.end}</p>
+	<section class="flex-col center item-box-section">
 		<div>
-			{data.icons.map((icon: string) => <Icon name={icon} height="1em" width="1em" />)}
+			<h1 style="color: red;">
+				<strong>Project pages are work in progress!</strong>
+			</h1>
+			<h2>They are not properly styled and may lack content.</h2>
 		</div>
-
-		<div style="margin: 5em; color:white;">
+		<ProjectBox project={project} />
+		<!-- 
+			Markdown content
+			Styled with Tailwind Typography
+		-->
+		<div
+			class="item-box-ignore prose
+			prose-neutral prose-blue dark:prose-invert prose-headings:text-indigo-600
+			prose-base md:prose-lg
+			w-full max-w-full lg:max-w-5xl
+			!p-5 lg:!p-10"
+		>
 			<slot />
 		</div>
-	</div>
+	</section>
 </BaseLayout>
