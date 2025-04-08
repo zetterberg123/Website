@@ -24,7 +24,7 @@ const { pageTitle, pageDescription, header=true, footer=true } = Astro.props;
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>{pageTitle}</title>
-		<script defer data-domain="zetterberg123.com" src="https://analytics.zetterberg123.com/js/script.outbound-links.js"></script>
+		<script is:inline defer src="https://analytics.zetterberg123.com/script.js" data-website-id="7f544cd8-79c5-4dcc-afad-e603696c2c08"></script>
 	</head>
 	<body>
 		{header && <Header />}

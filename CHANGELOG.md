@@ -2,8 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). \
+Versioning follow Major.Minor.Patch
+
+- Major: Major changes, such as a complete redesign/refactor.
+- Minor: New features/pages.
+- Patch: Bug fixes or dependency upgrades. Changes that are not visible.
 
 ## [Planned]
 
@@ -18,6 +22,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Potential changes
   - Highlight only a select few on the main page. Separate all projects page
   - Add rss
+
+## [2.1.1] 2025-04-08
+
+### Changed
+
+- Upgrade dependencies
+- Migrate to Tailwind Vite plugin.
+- Rename generated assets folder from "_astro" to "assets"
+
+### Removed
+
+- SemVer from this changelog
+- Version from package.json
+
+### Fixed
+
+- Discord link
+- Analytics link
+- Fonts path
 
 ## [2.1.0] 2024-01-30
 

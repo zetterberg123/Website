@@ -30,17 +30,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help`     | Get help using the Astro CLI                        |
 | `npx astro telemetry disable` | Disable [telemetry](https://astro.build/telemetry/) |
 
-## Progress images
+### Resources
 
-- First iteration
-  ![img](public/images/progress/First-website.png)
-- Second iteration
-  ![img](public/images/progress/Second-website.png)
-- Final iteration
-
-  Desktop layout
-
-  ![img](public/images/progress/Final-website.png)
-  Mobile layout
-
-  ![img](public/images/progress/Final-mobile.png)
+- Astro Docs: <https://docs.astro.build>
+- Icons: <https://iconify.design/>
